@@ -1,0 +1,56 @@
+body {
+
+    background-color: rgba(43, 97, 79, 0.699);
+}
+
+.video-webcam {
+    width: 480px;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.output-canvas {
+
+    position: absolute;
+    z-index: 1;
+    /* background-color: black; */
+    width: 480px;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.detect-div {
+    width: 480px;
+    height: 360px;
+}
+
+.detect-main-div {
+    width: 480px;
+    height: 480px;
+}
+
+@media only screen and (max-width: 767px) {
+    .detect-div{
+        width: 240px !important;
+        height: auto !important;
+        text-align: center;
+    }
+    .video-webcam {
+        width: 240px !important;
+        height: auto !important;
+    }
+    .output-canvas {
+        width: 240px !important;
+        height: auto !important;
+    }
+    .control-div {
+        margin-top: 24px;
+    }
+    .detect-main-div {
+        width: 240px;
+        height: 360px;
+    }
+
+}
